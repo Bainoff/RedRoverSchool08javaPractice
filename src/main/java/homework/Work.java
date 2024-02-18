@@ -1,13 +1,18 @@
 package homework;
 
-public class Work {
+import java.util.Arrays;
 
-        public static String areYouPlayingBanjo(String name) {
-            if (name.toUpperCase().charAt(0) == 'R') return name + " plays banjo";
-            else return name + " does not play banjo";
+public class Work {
+    public class AbbreviateTwoWords {
+
+        public static String abbrevName(String name) {
+            String[] arr = name.toUpperCase().split(" ");
+            name = arr[0].charAt(0) + "." + arr[1].charAt(0);
+            return name;
         }
+    }
         public static void main(String[] args) {
-            System.out.println(areYouPlayingBanjo("zobert"));
+            System.out.println(AbbreviateTwoWords.abbrevName("stanlet sgsdgsg"));
         }
     }
 
