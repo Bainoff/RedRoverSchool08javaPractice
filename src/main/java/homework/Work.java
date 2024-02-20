@@ -3,6 +3,9 @@ package homework;
 import homework.HW07.Employee;
 import homework.HW07.Person;
 import homework.HW07.Salary;
+import homework.HW08.Block;
+import homework.HW08.Fighter;
+import homework.HW08.Kata;
 
 import java.util.Arrays;
 
@@ -44,6 +47,16 @@ public class Work {
 
         Employee[] empArr = {john, bill, billy};
         System.out.println(Salary.getSum(empArr));
+
+        Block bl = new Block(new int[]{2,4,6});
+        System.out.println(bl.getWidth());
+        System.out.println(bl.getLength());
+        System.out.println(bl.getHeight());
+        System.out.println(bl.getVolume());
+        System.out.println(bl.getSurfaceArea());
+        System.out.println(Kata.declareWinner(new Fighter("Lew", 10, 2), new Fighter("Harry", 5, 4), "Lew"));
+
+
     }
     }
 
