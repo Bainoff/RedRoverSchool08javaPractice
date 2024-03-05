@@ -1,4 +1,4 @@
-package homework.HW10;
+package homework.HW111;
 
 //TODO Задача №3
 // Необходимо создать утилитарный класс со следующими методами:
@@ -11,8 +11,6 @@ package homework.HW10;
 //  - поиск наибольшего количества подчиненных в массиве менеджеров
 //  - поиск наибольшей надбавки (разнице между базовой ставкой и зарплатой) в массиве менеджеров
 //  - поиск наименьшей надбавки (разнице между базовой ставкой и зарплатой) в массиве менеджеров
-
-import java.util.Arrays;
 
 public class Utils {
     public Employee getEmployeeByName(Employee[] employees, String name){

@@ -6,7 +6,7 @@ package homework.HW10;
 
 public class Director extends Manager{
     @Override
-    public int getSalary() {
+    public double getSalary() {
         return getSalary() + getSalary() * (getNumberOfSubordinates() / 100 * 9);
     }
 }

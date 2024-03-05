@@ -1,4 +1,4 @@
-package homework.HW10;
+package homework.HW111;
 
 //TODO Задача №1
 // Необходимо создать класс Employee со следующими методами:
@@ -7,8 +7,9 @@ package homework.HW10;
 // getName - получить имя
 // setName
 // getSalary - получить зарплату
+// HW11 Employee.getSalary должен быть абстрактный
 
-public class Employee {
+public abstract class Employee {
 
     int baseSalary;
     String name;

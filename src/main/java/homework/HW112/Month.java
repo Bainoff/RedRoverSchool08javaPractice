@@ -1,14 +1,13 @@
-package homework.HW09;
+package homework.HW112;
 
 //TODO Задача №1
 // Создать класс Month с полями: имя месяца, количеством дней и количеством рабочих дней.
 // Создать класс MonthUtils который бы хранил подготовленные месяцы или их массивы для использования
 // (объекты класса Month).
-// HW11 Класс Month сделать неизменяемым (immutable)
-public class Month {
-    private String monthName;
-    private int daysNumber;
-    private int workDaysNumber;
+final public class Month {
+    private final String monthName;
+    private final int daysNumber;
+    private final int workDaysNumber;
 
     public Month(String monthName, int daysNumber, int workDaysNumber) {
         this.monthName = monthName;

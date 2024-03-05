@@ -23,20 +23,4 @@ public class MonthUtils {
     public static Month DECEMBER = new Month("december", 31, 19);
     static Month[] monthArray = {JANUARY, FEBRUARY, MARCH, APRIL, MAY, JUNE, JULY, AUGUST, SEPTEMBER, OCTOBER, NOVEMBER, DECEMBER};
     static Month[] workingMonth = {SEPTEMBER, OCTOBER, NOVEMBER, DECEMBER, JANUARY, FEBRUARY, MARCH, APRIL, MAY};
-
-    public static void main(String[] args) {
-        Manager man = new Manager("vasaMan", 55, 'm', 100, 10);
-        Employee emp = new Employee("vasaEmp", 33, 'm', 100);
-
-        System.out.println(man.getSalary(workingMonth));
-        System.out.println(emp.getSalary(workingMonth));
-        LicensePlate prezca = new LicensePlate("CA");
-        LicensePlate prezca2 = new LicensePlate("CA");
-        LicensePlate prezca3 = new LicensePlate("CA");
-        LicensePlate prezny = new LicensePlate("NY");
-        System.out.println(prezca.getPlate());
-        System.out.println(prezca2.getPlate());
-        System.out.println(prezca3.getPlate());
-        System.out.println(prezny.getPlate());
-    }
 }
