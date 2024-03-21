@@ -17,7 +17,7 @@ public class HW12 {
 
 //TODO Задача №2
 // Создать лист со значениями от 100 до 1000.
-        
+
         List<Integer> hundreds = new ArrayList<>();
         for (int i = 100; i <= 1000; i += 100) {
             hundreds.add(i);
@@ -45,12 +45,10 @@ public class HW12 {
         Map<Character, String> longWords = new HashMap<>();
         for (String word : list) {
             char letter = word.toLowerCase().charAt(0);
-            if (!longWords.keySet().contains(letter) || longWords.get(letter).length() < word.length()){
+            if (!longWords.keySet().contains(letter) || longWords.get(letter).length() < word.length()) {
                 longWords.put(letter, word);
             }
         }
-        for (Character key : longWords.keySet()) {
-            System.out.println(key + " " + longWords.get(key));
-        }
+        System.out.println(longWords.toString());
     }
 }
