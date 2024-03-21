@@ -7,6 +7,7 @@ import homework.HW08.Block;
 import homework.HW08.Fighter;
 import homework.HW08.Kata;
 
+import javax.sound.midi.MidiDevice;
 import java.util.Arrays;
 
 public class Work {
@@ -54,28 +55,26 @@ public class Work {
         System.out.println(bl.getHeight());
         System.out.println(bl.getVolume());
         System.out.println(bl.getSurfaceArea());
-        System.out.println(Kata.declareWinner(new Fighter("Lew", 10, 2), new Fighter("Harry", 5, 4), "Lew"));
+//        System.out.println(Kata.declareWinner(new Fighter("Lew", 10, 2), new Fighter("Harry", 5, 4), "Lew"));
 
-
-        class Kata {
-            public static String stringMerge(String s1, String s2, char letter) {
-                String s3 = "";
-                String s4 = "";
-                for (int i = 0; i < s1.length(); i++) {
-                    if (s1.charAt(i) == letter) {
-                        s3 = s1.substring(0, i + 1);
-                        break;
-                    }
-                }
-                for (int i = 0; i < s2.length(); i++) {
-                    if (s2.charAt(i) == letter) {
-                        s4 = s2.substring(i + 1);
-                        break;
-                    }
-                }
-                System.out.println();
-                return s3 + s4;
+        int f = 555555;
+        System.out.println(Integer.toString(f) + "ass");
+        System.out.println(Integer.parseInt("6666") + 1);
+        System.out.println(Kata.lastFibDigit(1000000));
+    }
+    static class Kata {
+        static int lastFibDigit(int n) {
+            long fib = 1;
+            long fibPrev = 1;
+            long fibPrevPrev = 0;
+            int res = 0;
+            for (int i = 2; i <= n; i++) {
+                fib = fibPrev + fibPrevPrev;
+                fibPrevPrev = fibPrev;
+                fibPrev = fib;
             }
+            res = (int) (fib % 10);
+         return res;
         }
     }
 
